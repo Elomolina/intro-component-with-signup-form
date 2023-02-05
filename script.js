@@ -36,6 +36,7 @@ function entrada(e)
     /*Los campos no fueron rellenados completamente*/
     else
     {
+        button.disabled = true;
         h6.style.display = "block";
         h6.innerText = "Please fill the entire form"
     }
