@@ -50,14 +50,15 @@ form
 }
 input, button
 {
-    
+
     border: 1px solid grey;
     font-weight: bold;
-    height: 2.5em;
-    border-radius: 5px;
+    height: 3em;
+    border-radius: 10px;
 }
 input 
 {
+    border: 2px solid rgb(241, 106, 129);
     padding-left: 1em;
 }
 button 
@@ -76,6 +77,14 @@ button:hover
     border: 1px solid hsl(154, 53%, 63%);
     background-color: hsl(154, 53%, 63%);
 }
+button:disabled 
+{
+    background-color: rgb(200, 188, 188);
+    border-color: rgb(200, 188, 188);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
 h6 
 {
     margin: 0px 0px 2em 0px;
@@ -91,7 +100,8 @@ h1
 }
 p 
 {
-    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
 h1 , p
 {
@@ -109,6 +119,29 @@ h5
 .free 
 {
     font-weight: lighter;
+}
+#xd 
+{
+    transition: .4s;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    background-color: rgb(207, 12, 12);
+    color:white;
+    display: none;
+    animation-name: peo;
+    animation-duration: .4s;
+}
+@keyframes peo 
+{
+    from 
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
 }
 /*añadir mobile version y agrandar en pantallas grandes*/
 @media(max-width: 600px)
