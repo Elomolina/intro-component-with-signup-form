@@ -1,0 +1,150 @@
+body, html 
+{
+    height: 100%;
+}
+body 
+{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0em 1em 0em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color:hsl(0, 100%, 74%) ;
+}
+.attribution 
+{
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+}
+section 
+{
+    width:50%;
+}
+.container 
+{
+    width:50%;
+}
+.left-side, .right-side
+{  
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} 
+form 
+{
+    border-radius: 10px;
+    box-shadow:3px 3px 3px rgba(0,0,0, 0.2);
+    box-sizing: border-box;
+    padding: 2em 2em 0 2em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+input, button
+{
+    
+    border: 1px solid grey;
+    font-weight: bold;
+    height: 2.5em;
+    border-radius: 5px;
+}
+input 
+{
+    padding-left: 1em;
+}
+button 
+{
+
+    height: 4em;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px grey;
+    background-color: hsl(154, 59%, 51%);
+    color:white;
+    border: 1px solid hsl(154, 59%, 51%);
+}
+button:hover 
+{
+    border: 1px solid hsl(154, 53%, 63%);
+    background-color: hsl(154, 53%, 63%);
+}
+h6 
+{
+    margin: 0px 0px 2em 0px;
+    color:hsl(246, 25%, 77%);
+}
+h6 span
+{
+    color:hsl(0, 100%, 74%) ;
+}
+h1 
+{
+    font-size:1.9rem;
+}
+p 
+{
+    font-size: 0.8rem;
+}
+h1 , p
+{
+    color: white;
+}
+h5
+{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    text-align: center;
+    color:White;
+    background-color: hsl(248, 32%, 49%);
+}
+.free 
+{
+    font-weight: lighter;
+}
+/*añadir mobile version y agrandar en pantallas grandes*/
+@media(max-width: 600px)
+{
+    body 
+    {
+        flex-direction: column;
+    }
+    section
+    {
+        width: 100%;
+    }
+    .container 
+    {
+        text-align: center;
+        width: 100%;
+    }
+    p 
+    {
+        font-size: 0.8rem;
+    }
+    h1 
+    {
+        font-size: 1.5rem;
+    }
+    form 
+    {
+        width: 80%;
+    }
+    h5 
+    {
+        width:70%;
+    }
+    .attribution 
+    {
+        bottom:-10px;
+    }
+    
+}
